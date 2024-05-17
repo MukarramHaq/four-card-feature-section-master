@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ /* Removes the margins from the lines */
+*{
+    margin: 0;
+    font: inherit;
+}
+
+img,
+svg{
+  display: block;
+  max-width: 100%;
+}
+
+:root{
+    /* Primary Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%); 
+
+    /* Neutral colors */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* Fonts */
+    --primary: Poppins;
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 600; 
+  }
+
+body{
+    background-color: var(--very-light-gray);
+    font-family: "Poppins", sans-serif;
+    font-weight: var(--fw-normal);
+    color: var(--grayish-blue);
+    padding: 1rem 1rem 5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* Should I make the body as a grid? */
+    /* display: grid; */
+}
+
+.app-description{
+    /* border: 1px solid black; */
+    margin-top: 5rem;
+    text-align: center;
+
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    /* max-width:37.5rem; */
+}
+
+#first-heading{
+    font-weight: var(--fw-light);
+    font-size: 1.5rem;
+}
+
+#second-heading{
+    font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+}
+
+#third-heading{
+    margin: 1rem 0 3rem 0;
+}
+
+.app-tools{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4{
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 50px 1px rgb(177, 177, 177);
+    text-align: left;
+    padding: 1rem;
+    background-color: white;
+    line-height: 1.8;
+}
+
+.row-1{
+    border-top: 5px solid var(--cyan);
+}
+.row-2{
+    border-top: 5px solid var(--red);
+}
+.row-3{
+    border-top: 5px solid var(--orange);
+}
+.row-4{
+    border-top: 5px solid var(--blue);
+}
+
+
+.tool-heading{
+    color: var(--very-dark-blue);
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+}
+
+.app-tools img{
+    margin: 2rem 1.5rem 1rem 0rem;
+    float: right;
+} 
