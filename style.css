@@ -41,21 +41,10 @@ body{
     font-weight: var(--fw-normal);
     color: var(--grayish-blue);
     padding: 1rem 1rem 5rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    /* Should I make the body as a grid? */
-    /* display: grid; */
 }
 
 .app-description{
-    /* border: 1px solid black; */
-    margin-top: 5rem;
     text-align: center;
-
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    /* max-width:37.5rem; */
 }
 
 #first-heading{
@@ -74,10 +63,8 @@ body{
 }
 
 .app-tools{
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
 }
 
@@ -86,16 +73,27 @@ body{
 .row-3,
 .row-4{
     border-radius: 0.5rem;
-    box-shadow: 5px 5px 50px 1px rgb(177, 177, 177);
+    box-shadow: 5px 5px 50px 1px hsl(0, 0%, 69%);
     text-align: left;
     padding: 1rem;
     background-color: white;
     line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relateive;
+}
+
+.tool-picture{
+    align-self: flex-end;
+    margin-left: auto;
+    margin: 2rem 1.5rem 1rem 0rem;
 }
 
 .row-1{
     border-top: 5px solid var(--cyan);
 }
+
 .row-2{
     border-top: 5px solid var(--red);
 }
@@ -113,7 +111,12 @@ body{
     font-size: 1.3rem;
 }
 
-.app-tools img{
-    margin: 2rem 1.5rem 1rem 0rem;
-    float: right;
-} 
+@media (min-width:700px){
+    .app-tools{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 858px){
+    
+}
